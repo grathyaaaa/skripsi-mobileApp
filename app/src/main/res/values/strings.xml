@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">input</string>
+    <string name="title">Patient\'s Data</string>
+    <string name="name">Name</string>
+    <string name="age">Age</string>
+    <string name="years">Years</string>
+    <string name="woman">Woman</string>
+    <string name="man">Man</string>
+    <string name="gender">Gender</string>
+    <string name="diabetes_mellitus">Diabetes Mellitus</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="hypertension">Hypertension</string>
+    <string name="heart_disease">Heart Disease</string>
+    <string name="smoking">Smoking</string>
+    <string name="save">Save</string>
+    <string name="clear">Clear</string>
+    <string name="failed">Failed to add</string>
+    <string name="empty">Data tidak boleh kosong</string>
+    <string name="vital_signs">Vital Signs</string>
+    <string name="heart_rate">Heart Rate</string>
+    <string name="bpm">bpm</string>
+    <string name="respiratory_rate">Respiratory Rate</string>
+    <string name="x_m">x/m</string>
+    <string name="temperature">Temperature</string>
+    <string name="c">°C</string>
+
+</resources>
