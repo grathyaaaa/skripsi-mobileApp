@@ -8,7 +8,6 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnFailureListener;
@@ -68,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
         btnSave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(checkAndGetData()) {
+                if (checkAndGetData()) {
                     saveData();
                 } else {
                     Toast.makeText(MainActivity.this, "invalid data", Toast.LENGTH_SHORT).show();
@@ -80,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (view.getId() == R.id.imageView_vitalSign) {
-                    Intent moveIntent = new Intent(MainActivity.this, VitalSingsActivity.class);
+                    Intent moveIntent = new Intent(MainActivity.this, VitalSignsActivity.class);
                     startActivity(moveIntent);
                 } else {
                     Toast.makeText(MainActivity.this, "error", Toast.LENGTH_SHORT).show();
@@ -115,7 +114,6 @@ public class MainActivity extends AppCompatActivity {
         boolean valid = true;
         riskFactors.name = editTextName.getText().toString().trim();
         riskFactors.age = editTextAge.getText().toString().trim();
-
 
 
         rgGender.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
@@ -167,13 +165,13 @@ public class MainActivity extends AppCompatActivity {
 
         if (isEmpty(riskFactors.name)) {
             valid = false;
-            editTextName.setError("Tidak boleh kosong");
+            editTextName.setError("Enter Patient's Name");
         } else {
             editTextName.setError(null);
         }
         if (isEmpty(riskFactors.age)) {
             valid = false;
-            editTextAge.setError("Tidak boleh kosong");
+            editTextAge.setError("Enter Patient's Age");
         } else {
             editTextAge.setError(null);
         }

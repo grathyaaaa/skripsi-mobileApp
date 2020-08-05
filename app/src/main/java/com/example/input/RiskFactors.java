@@ -14,6 +14,20 @@ public class RiskFactors implements Serializable {
     boolean dm;
     boolean smoking;
 
+    public RiskFactors() {
+
+    }
+
+    public RiskFactors(String Name, String Age, boolean Gender, boolean Hypertension, boolean HeartDisease, boolean Dm, boolean Smoking) {
+        name = Name;
+        age = Age;
+        gender = Gender;
+        hypertension = Hypertension;
+        heartDisease = HeartDisease;
+        dm = Dm;
+        smoking = Smoking;
+    }
+
     public String getName() {
         return name;
     }
@@ -70,29 +84,15 @@ public class RiskFactors implements Serializable {
         this.smoking = smoking;
     }
 
-    public RiskFactors() {
-
-    }
-
     @NonNull
     @Override
     public String toString() {
-        return  " " + name + "\n" +
+        return " " + name + "\n" +
                 " " + age + "\n" +
                 " " + gender + "\n" +
                 " " + hypertension + "\n" +
                 " " + heartDisease + "\n" +
                 " " + dm + "\n" +
                 " " + smoking;
-    }
-
-    public RiskFactors(String Name, String Age, boolean Gender, boolean Hypertension, boolean HeartDisease, boolean Dm, boolean Smoking) {
-        name = Name;
-        age = Age;
-        gender = Gender;
-        hypertension = Hypertension;
-        heartDisease = HeartDisease;
-        dm = Dm;
-        smoking = Smoking;
     }
 }

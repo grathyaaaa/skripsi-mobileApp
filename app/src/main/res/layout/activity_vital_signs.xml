@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".VitalSingsActivity">
+    tools:context=".VitalSignsActivity">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
+        android:textSize="35sp"
         android:text="@string/vital_signs"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/vitalSign_top"
@@ -22,8 +22,8 @@
 
     <ImageView
         android:id="@+id/vitalSign_top"
-        android:layout_width="112dp"
-        android:layout_height="120dp"
+        android:layout_width="158dp"
+        android:layout_height="140dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -34,32 +34,32 @@
 
     <ImageView
         android:id="@+id/imageView_HeartRate"
-        android:layout_width="79dp"
-        android:layout_height="59dp"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/vitalSign_top"
-        app:layout_constraintHorizontal_bias="0.595"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.154"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.136"
+        app:layout_constraintVertical_bias="0.087"
         app:srcCompat="@drawable/ic_heart_rate" />
 
     <ImageView
         android:id="@+id/imageView_respiratoryRate"
-        android:layout_width="70dp"
-        android:layout_height="51dp"
+        android:layout_width="104dp"
+        android:layout_height="77dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/imageView_HeartRate"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.437"
         app:layout_constraintStart_toStartOf="@+id/imageView_HeartRate"
         app:layout_constraintTop_toBottomOf="@+id/imageView_HeartRate"
-        app:layout_constraintVertical_bias="0.029"
+        app:layout_constraintVertical_bias="0.036"
         app:srcCompat="@drawable/ic_rr" />
 
     <ImageView
         android:id="@+id/imageView5"
-        android:layout_width="68dp"
-        android:layout_height="66dp"
+        android:layout_width="104dp"
+        android:layout_height="94dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/imageView_respiratoryRate"
         app:layout_constraintHorizontal_bias="0.0"
@@ -73,23 +73,24 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/heart_rate"
-        android:textSize="20sp"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView_HeartRate"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.095"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/imageView_HeartRate"
-        app:layout_constraintTop_toTopOf="@+id/imageView_HeartRate" />
+        app:layout_constraintTop_toTopOf="@+id/imageView_HeartRate"
+        app:layout_constraintVertical_bias="0.512" />
 
     <TextView
         android:id="@+id/textView_bpm"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/bpm"
-        android:textSize="20sp"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="@+id/textView_heartRate"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.439"
-        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.209"
+        app:layout_constraintStart_toEndOf="@+id/textView_heartRate"
         app:layout_constraintTop_toTopOf="@+id/textView_heartRate"
         app:layout_constraintVertical_bias="0.0" />
 
@@ -98,7 +99,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/respiratory_rate"
-        android:textSize="20sp"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView_respiratoryRate"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -111,7 +112,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/x_m"
-        android:textSize="20sp"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="@+id/textView_respiratoryRate"
         app:layout_constraintEnd_toEndOf="@+id/textView_bpm"
         app:layout_constraintHorizontal_bias="0.0"
@@ -124,7 +125,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/temperature"
-        android:textSize="20sp"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -137,7 +138,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/c"
-        android:textSize="20sp"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="@+id/textView_temperature"
         app:layout_constraintEnd_toEndOf="@+id/textView_rr"
         app:layout_constraintStart_toStartOf="@+id/textView_rr"

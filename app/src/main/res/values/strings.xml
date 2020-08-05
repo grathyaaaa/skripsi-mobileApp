@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">input</string>
+    <string name="app_name">Stroke App</string>
     <string name="title">Patient\'s Data</string>
     <string name="name">Name</string>
     <string name="age">Age</string>
@@ -18,11 +18,11 @@
     <string name="failed">Failed to add</string>
     <string name="empty">Data tidak boleh kosong</string>
     <string name="vital_signs">Vital Signs</string>
-    <string name="heart_rate">Heart Rate</string>
+    <string name="heart_rate">HR</string>
     <string name="bpm">bpm</string>
-    <string name="respiratory_rate">Respiratory Rate</string>
+    <string name="respiratory_rate">RR</string>
     <string name="x_m">x/m</string>
-    <string name="temperature">Temperature</string>
+    <string name="temperature">Temp</string>
     <string name="c">°C</string>
 
 </resources>

@@ -11,13 +11,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/title"
-        android:textSize="20sp"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.154" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.025" />
 
     <EditText
         android:id="@+id/edt_name"
@@ -34,6 +33,7 @@
         android:autofillHints="@string/name" />
 
     <TextView
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/years"
@@ -260,11 +260,14 @@
         android:id="@+id/button_save"
         android:layout_width="276dp"
         android:layout_height="47dp"
-        android:layout_marginBottom="196dp"
+        android:layout_marginTop="16dp"
         android:text="@string/save"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/radioGroup_smoking"
-        app:layout_constraintStart_toStartOf="@+id/textView_smoking" />
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="@+id/textView_smoking"
+        app:layout_constraintTop_toBottomOf="@+id/textView_smoking"
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
         android:id="@+id/imageView_vitalSign"
@@ -275,8 +278,19 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_save"
-        app:layout_constraintVertical_bias="0.313"
+        app:layout_constraintVertical_bias="0.168"
         app:srcCompat="@drawable/vital_signs" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="141dp"
+        android:layout_height="99dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.053"
+        app:srcCompat="@drawable/ic_stroke" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
